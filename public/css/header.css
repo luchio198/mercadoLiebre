@@ -1,0 +1,193 @@
+/*
+Amarillo: #EAC926; 
+Azul: #03264C; 
+Celeste: #1259c3; 
+Gris oscuro: #666; 
+Gris claro: #ebebeb; 
+Verde: #39b54a;
+*/
+
+/* ------------------- Inicio del Header --------------------- */
+
+.header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header-top-bar {
+    display: flex;
+    flex-wrap: wrap; /* Permite tirar para abajo los elementos que no entren en una pantalla menor */
+    justify-content: space-around;
+}
+
+.logo {
+    width: 35%;
+}
+
+.input-search {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input-search input{
+    width: 90%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    align-self: center;
+}
+.input-search i {
+    color: #03264C;
+    align-self: center;
+    margin-left: 8px;
+}
+
+.input-search :focus{  /* que cuando haga click se borre lo que aparece como placeholder */
+    initial-value: none;
+}
+
+.copy-header {
+    text-align: center;
+    color: #03264C;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    align-items: center;
+    align-self: center;
+}
+
+
+.hamburguer-button {
+    background-color: #03264C;
+    color: white;
+    text-align: center;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: auto;
+}
+
+.hamburguer-button:focus-visible .navbar-hidden {
+    display: block;
+}
+/* Al estar en un tamaño menor a 768px la barra de navegacion se mostrará
+   por medio del hamburguer button, por eso el display none*/ 
+.navbar {
+    display: none;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.banner {
+    width: 100%;
+    height: 90px;  /* El banner e de 1600 x 340 por lo que si el mobile tiene 360 tendria que tener 76.5 de height*/
+    text-align: center;
+}
+
+.navbar-hidden {
+    display: none;
+    width: 100%;
+    color: #03264C;
+    cursor: default;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.navbar-hidden li {
+    padding: 5px;
+}
+
+.navbar-hidden a{
+    text-decoration: none;
+}
+
+/* ------------------- Inicio Medias Queries --------------------- */
+
+@media (min-width: 360px) {
+
+    .logo {
+        width: 35%;
+    }
+    .banner { 
+        height: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .logo {
+        max-width: 250px;
+    }
+    
+    .input-search {
+        max-width: 600px;
+        flex-grow: 4;
+    }
+    
+    .copy-header {
+        
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 200px;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 0 8px;
+        font-size: 10px;
+    }
+
+    .banner { 
+        height: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .navbar li {
+        margin: 0 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .navbar, .header-top-bar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .navbar {
+        margin-top: 15px;
+    }
+
+    .navbar li {
+        margin: 0 15px;
+    }
+}

@@ -1,0 +1,100 @@
+/*
+Amarillo: #EAC926; 
+Azul: #03264C; 
+Celeste: #1259c3; 
+Gris oscuro: #666; 
+Gris claro: #ebebeb; 
+Verde: #39b54a;
+*/
+/* ------------------- Inicio Formulario --------------------- */
+
+.form-register {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.section-register h3 {
+    font-size: 20px;
+    color: #03264C;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-register h4 {
+    font-size: 15px;
+    color: #03264C;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.form-register input {
+    width: 230px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.form-register input[type="radio"] {
+        border: 0px;
+        width: auto;
+        height: auto;
+}
+
+.form-register input[type="checkbox"] {
+    border: 0px;
+    width: auto;
+    height: auto;
+}
+.form-register button {
+    width: 230px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #03264C;
+    color: #EAC926;
+    border: #afadad solid 1px;
+    border-radius: 8px;
+}
+
+.form-register button:hover {
+    background-color: #063364;
+    color: white;
+}
+
+.input:focus {  /* que cuando haga click y escriba algo se borre lo que aparece como placeholder */
+    initial-value: none;
+}
+
+.perfil-radioboton {
+    font-size: 15px;
+}
+
+#intereses {
+    margin-top: 30px;
+}
+/* ------------------- Inicio Medias Queries --------------------- */
+
+@media (min-width: 768px) {
+
+    .form-register input {
+        width: 400px;
+        height: 40px;
+        margin: 10px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .form-register button {
+        width: 400px;
+        
+    }
+}
