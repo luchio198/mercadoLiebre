@@ -115,10 +115,6 @@ Verde: #39b54a;
 /* ------------------- Inicio Medias Queries --------------------- */
 
 @media (min-width: 768px) {
-    
-    .banner { 
-        height: 180px;
-    }
 
     .titulo {
         text-align: left;

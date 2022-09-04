@@ -8,8 +8,8 @@ const publicPath = path.join(__dirname, '/public'); // Se puede usar path.resolv
 app.use(express.static(publicPath)); // Le decimos a express que vamos a hacer uso
 // de archivos estaticos ubicados en la carpeta public
 
-app.listen(3002, function () {
-    console.log("Servidor corriendo");
+app.listen(process.env.PORT || 3002, function () {
+    console.log("Servidor corriendo en el puerto 3002");
 });
 
 app.get('/', (req,res) =>{
