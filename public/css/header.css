@@ -71,7 +71,7 @@ Verde: #39b54a;
     margin: auto;
 }
 
-.hamburguer-button:focus-visible .navbar-hidden {
+.hamburguer-button:active .navbar-hidden {
     display: block;
 }
 /* Al estar en un tamaño menor a 768px la barra de navegacion se mostrará
