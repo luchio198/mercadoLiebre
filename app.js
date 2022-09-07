@@ -11,15 +11,7 @@ app.use(express.static(publicPath)); // Le decimos a express que vamos a hacer u
 app.listen(process.env.PORT || 3002, function () {
     console.log("Servidor corriendo en el puerto 3002");
 });
-/*
-app.get('/mostrar_cambio', (req,res) =>{
-    res.send("Cambie");  // Permite enviar texto o codigo HTML
-});
 
-app.get('/mostrar_mensaje', (req,res) =>{
-    res.send("Hola Mundo");  // Permite enviar texto o codigo HTML
-});
-*/
 app.get('/', (req,res) =>{
     res.sendFile((__dirname + '/views/home.html'));  // Permite enviar un archivo HTML
 });
